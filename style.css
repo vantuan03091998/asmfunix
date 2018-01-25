@@ -1,10 +1,13 @@
 html{box-sizing: border-box;}
 *{
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     font-family: sans-serif;
+    color: #333333;
 }
 .container{
     max-width: 1180px;
@@ -24,7 +27,7 @@ body{
 
 /* MENU */
 .navbar{
-    background-color: #eeeeee;
+    background-color: transparent;
 }
 .menu{
     list-style-type: none;
@@ -47,7 +50,6 @@ body{
 #banner{
     background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png');
     background-position: center;
-    background-size: contain;
     background-repeat: no-repeat;
     height: 500px;
     width: 100%;
@@ -59,4 +61,112 @@ body{
     top: 20%;
     left: 10%;
 }
+.intro h1{
+    margin: 1rem 0;
+}
 /* END BANNER */
+
+/* CONTENT */
+#content{
+    background-color: #eeeeef;
+    padding: 20px;
+}
+/* .img-holder{
+    width: 98%;
+    margin: 0 auto;
+} */
+.content-title{
+    padding: 1.33333%;
+}
+h2{
+    margin: 1rem 0;
+}
+.col{
+    float: left;
+    width: 33.3333%;
+}
+.col img{
+    width: 92%;
+    display: block;
+    margin: 0 auto;
+}
+.pt{
+    padding-top: 35px;
+}
+/* END CONTENT */
+
+/* FOOTER */
+#footer h2{
+    margin: 0.8rem 0;
+}
+#footer p{
+    margin: 0.6rem 0;
+}
+#footer{
+    padding: 20px;
+}
+#footer .col{
+    padding: 0 1.3333%;
+}
+/* END FOOTER */
+
+/* RESPONSIVE */
+@media screen and (max-width: 991px){
+    .navbar{
+        background-color: #556677;
+    }
+    .menu a{
+        color: #ffffff;
+        padding: 2em;
+    }
+    #banner{
+        background-image: none;
+        height: 150px; 
+        border-bottom: 1px solid #ccc;
+    }
+    .intro{
+        top: 10%;
+        left: 4%;
+        color: #333333;
+    }
+    #content{
+        background-color: #ffffff;
+    }
+    .content-title{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .content-title p{
+        margin: 0 0 .6rem;
+    }
+    .col{
+        width: 50%;
+        padding-bottom: 30px;
+    }
+    .pt{
+        padding-top: 30px;
+    }
+    #footer .col{
+        width: 100%;
+        padding: 2%;
+    }
+}
+@media screen and (max-width: 767px){
+    #banner{
+        border-bottom: 0;
+    }
+    .intro{
+        left: 6.7%;
+    }
+    .content-title{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .col{
+        width: 100%;
+    }
+    #footer .col{
+        padding: 2% 4%;
+    }
+}
+/* END RESPONSIVE */
