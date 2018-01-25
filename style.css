@@ -1,0 +1,62 @@
+html{box-sizing: border-box;}
+*{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+
+/* MENU */
+.navbar{
+    background-color: #eeeeee;
+}
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    padding: 1em 2em;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* END MENU */
+
+/* BANNER */
+#banner{
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.intro{
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+/* END BANNER */
